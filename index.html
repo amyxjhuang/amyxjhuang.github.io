@@ -13,9 +13,15 @@
     font-size: 40px;}
   p	{color: black;
        /* border: 3px solid white; */
-       padding: 20px;
+       padding-top: 30px;
+       padding-left: 150px;
+       padding-right: 30px;
+       spacing: 10px;
+       line-height: 25px;
+       /* padding: 20px; */
        font-family: 'Lora', serif;}
   h2  {color:black;
+    text-decoration: none;
     font-family: 'Lora', serif;}
   .nav {
     padding-top: 10px;
@@ -29,6 +35,7 @@
     width: 960px;
     margin: 0 auto;
     padding-top: 30px;
+    text-decoration: none;
   }
 
   #header {
@@ -39,10 +46,14 @@
     /* letter-spacing: 5px; */
   }
   #border {
-    border-color: black;
-    border-spacing: 5px;
+    border: 3px solid black;
+    /* border-spacing: 5px; */
   }
-
+  #links{
+    border: 1px solid black;
+    /* border-radius: 20px; */
+    border-spacing: 30px;
+    text-decoration: none;  }
   }
 
   </style>
@@ -52,7 +63,7 @@
 <!-- <nav> and <div> can be used as container for navigation links-->
 
 <nav class="nav">
-  <h1 type="border"><t>amy xuejing huang</h1>
+  <h1><t>amy xuejing huang</h1>
   <a href="index.html" class="nav item">home</a>
   <a href="#edu" class="nav item">education</a>
   <a href="#proj" class="nav item">projects</a>
@@ -65,9 +76,21 @@
 <div class="container">
   <img src="facepic.JPG" height=400>
   <p> My name is Amy Huang, and I am a student at UC
-    Berkeley majoring in Computer Science.
+    Berkeley majoring in Computer Science. I grew up in southern California
+    and have a background in visual arts. I was in the Visual Arts
+    Conservatory at the Orange County High School of the Arts. Currently I have been self learning
+    React JS and I am looking for industry experience in software development.
+    <br><br>
+    You can reach out to me by email at <a href="amyxjhuang@berkeley.edu">amyxjhuang@berkeley.edu</a>, and check out
+    my resume and additional links below.<br> <br></p>
+    <center>
+      <h2 >
+    <a id="links" href="resume.html">&nbsp;resume&nbsp</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a id="links" href="https://linkedin.com/in/amyxjhuang">&nbsp;linkedin&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a id="links" href="https://github.io/amyxjhuang">&nbsp;github&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a id="links" href="https://amyxjhuang.itch.io">&nbsp;itch.io (old)&nbsp;</a></h2>
+  </center>
 
-</p>
-</div>
+</div><br><br>
 </body>
 </html>
