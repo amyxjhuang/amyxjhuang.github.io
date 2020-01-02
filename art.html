@@ -13,8 +13,8 @@
     font-size: 40px;}
   p	{color: black;
        /* border: 3px solid white; */
-       padding-top: 30px;
-       padding-left: 150px;
+       /* padding-top: 30px; */
+       /* padding-left: 150px; */
        padding-right: 30px;
        spacing: 10px;
        line-height: 25px;
@@ -22,6 +22,8 @@
        font-family: 'Lora', serif;}
   h2  {color:black;
     text-decoration: none;
+    letter-spacing: 3px;
+    text-align: center;
     font-family: 'Lora', serif;}
   .nav {
     padding-top: 10px;
@@ -32,7 +34,7 @@
     text-decoration: none;
   }
   .container {
-    width: 960px;
+    width: 1100px;
     margin: 0 auto;
     padding-top: 30px;
     text-decoration: none;
@@ -51,12 +53,32 @@
   }
   #links{
     border: 1px solid black;
-    letter-spacing:3px;
+    letter-spacing:2px;
     /* border-radius: 20px; */
     border-spacing: 30px;
     text-decoration: none;  }
-  }
 
+  table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;
+  }
+  .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+}
   </style>
 
 <title>Amy Huang</title>
@@ -72,27 +94,25 @@
 
   <br>
 </nav>
-<h2 id="header"><mark>about me</mark></h2>
-
+<h2 id="header"><mark>artwork</mark></h2>
+<!-- <center>click on titles for github source code</center> -->
 </head>
-<body>
-<div class="container">
-  <img src="facepic.JPG" height=400>
-  <p> My name is Amy Huang, and I am a student at The University of California,
-    Berkeley majoring in Computer Science. I grew up in southern California
-    and have a background in visual arts. Currently I have been self learning
-    React JS and I will be interning at <a href="https://www.snap.com/en-US/"> Snap Inc</a> in Los Angeles, CA for summer 2020.
-    <br><br>
-    You can reach out to me by email at <a href="amyxjhuang@berkeley.edu">amyxjhuang@berkeley.edu</a>, and check out
-    my resume and additional links below.<br> <br></p>
-    <center>
-      <h5 >
-    <a id="links" href="https://calthetatau-prod.s3.amazonaws.com/uploads/user/resume_url/308/amy_huang_resume.pdf">&nbsp;resume&nbsp</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a id="links" href="https://linkedin.com/in/amyxjhuang">&nbsp;linkedin&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a id="links" href="https://github.io/amyxjhuang">&nbsp;github&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a id="links" href="https://amyxjhuang.itch.io">&nbsp;itch.io (old)&nbsp;</a></h5>
-  </center>
+<body><center>
+  <img src="art/amy.png" height=400>
+  <img src="art/dumb.png" height=400>
+  <img src="art/figure2.png" height=300  style="transform:rotate(90deg);">
+  <img src="art/fishie.png" height=400>
+  <img src="art/graphite.png" height=400>
+   <img src="art/lara.png" height=400>
+   <img src="art/leia.png" height=400>
+   <img src="art/oil.png" height=400>
+   <img src="art/portrait.png" height=400  style="transform:rotate(90deg);">
+   <img src="art/sticker.png" height=400>
+   <img src="art/tasty.png" height=400>
 
-</div><br><br>
+
+  <img src="art/figure.png" height=400 style="transform:rotate(90deg);">
+  <img src="art/charcoal.png" height=400 style="transform:rotate(90deg);">
+</center>
 </body>
 </html>
