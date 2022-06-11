@@ -1,5 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 .App {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+img{
+  margin: 2px 2px 2px 2px;
+}
+
+a{
+  color:#1501FF;
+  text-decoration: none;
 }
 
 .App-logo {
@@ -7,21 +19,146 @@
   pointer-events: none;
 }
 
+.container {
+  width: 70vh;
+  margin-left:350px ;
+  margin-right: 350px;
+  margin-top:30px;
+  margin-bottom: 30px;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-content: flex-start;
+  align-items:flex-start;
+}
+h1 {
+  text-align: left;
+}
+p{
+  text-align:left;
+}
+
+#faceimg {
+  margin: 20px 10px 10px 10px
+}
+
+.icon {
+  margin: 7px 7px 7px 7px;
+  height:20px;
+}
+
+.project-container{
+  display:flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  margin-left: 100px ;
+  margin-right: 100px ;
+  padding-top: 20px;
+  padding-right: 60px;
+  padding-left:60px;
+  background-color: #F2F0FC;
+  margin-bottom: 20px;
+
+}
+.proj-img{
+  width:35vw;
+}
+
+.center {
+  text-align: center;
+}
+
+.love-calc {
+  display:flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 20px;
+  padding-right: 60px;
+  padding-left:60px;
+  background-color: #F2F0FC;
+  margin-bottom: 20px;
+}
+.proj-desc{
+  width: 50%;
+  display:flex;
+  align-items: center;
+  padding-bottom:20px;
+
+}
+
+.proj-bullets{
+  flex-direction: column;
+  text-align: left;
+}
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-item {
+  margin-right: 50px;
+  font-size:20px;
+  border: 5px solid transparent;
+  border-width: thin;
+  color: black;
+  padding:3px;
+}
+
+.nav-item:hover {
+  border: 5px solid black;
+  border-width: thin;
+
+}
+
+#title {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: black;
+  margin-left: 30px;
+  width: 500px;
+  font-size:30px;
+
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: calc(10px + 2vmin);
+  margin-right: 30px;
+  margin-left:400px;
+  width: 200px;
+}
+
+.App-header {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0;
+  background-color: #E5E0FF;
+  height: 12vh;
+  display:flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width:100%;
+}
+
+.main {
+  margin-top: 16vmin;
+  margin-bottom:10vmin;
+}
+
+#social {
+  width: 300px;
 }
 
 .App-link {
