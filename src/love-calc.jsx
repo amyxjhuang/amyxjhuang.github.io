@@ -140,7 +140,6 @@ class LoveCalc extends React.Component {
   }
 
   render() {
-    if (this.props.currentTab === "artwork") {
       return(
 
         <div className="container">
@@ -155,10 +154,6 @@ class LoveCalc extends React.Component {
         </div>
 
       );
-    }
-    else {
-      return (<div></div>);
-    }
 
   }
 }

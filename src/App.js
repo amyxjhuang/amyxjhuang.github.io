@@ -2,34 +2,23 @@ import React from 'react';
 import About from './About.jsx'
 import Projects from './Projects.jsx'
 import LoveCalc from './love-calc.jsx'
-import WeatherForecast from './weather/WeatherForecast.js'
 import logo from './logo.svg';
 import './App.css';
 
 class App extends React.Component {
   constructor() {
     super();
-    this.state = {
-      currentTab:"home"
-    }
-  }
-
-  changeTab = (newTab) => {
-    this.setState({currentTab: newTab});
   }
 
   render() {
-    console.log(this.state.currentTab)
     return (
       <div className="App">
         <header className="App-header">
-          <h1 id="title"><img src="https://sdk.bitmoji.com/render/panel/965f4060-c8d0-4b02-8e05-45f7beb660eb-32f4148d-fa0e-4a7f-8810-f7e01716acf4-v1.png?transparent=1&palette=1" height="100px"/>AMY XUEJING HUANG</h1>
+          <h1 id="title"><img src="https://sdk.bitmoji.com/render/panel/965f4060-c8d0-4b02-8e05-45f7beb660eb-32f4148d-fa0e-4a7f-8810-f7e01716acf4-v1.png?transparent=1&palette=1" height="100px"/>amy x huang</h1>
 
           <div id="nav">
-            <a className="nav-item" onClick={() => this.changeTab("home")}>HOME</a>
-            <a className="nav-item" onClick={() => this.changeTab("projects")}>PROJECTS</a>
-            <a className="nav-item"onClick={() => this.changeTab("artwork")}>LOVE</a>
-            <a className="nav-item"onClick={() => this.changeTab("weather")}>WEATHER</a>
+            <a className="nav-item" href="/">home</a>
+            <a className="nav-item" target="_" href="/weather">weather</a>
 
           </div>
 
@@ -49,14 +38,10 @@ class App extends React.Component {
           </div>
         </header>
         <div className="main">
-          <About changeTab={this.changeTab}
-                 currentTab={this.state.currentTab}/>
+          <About />
 
-         <Projects changeTab={this.changeTab}
-                  currentTab={this.state.currentTab}/>
-         <LoveCalc currentTab={this.state.currentTab}/>
-         <WeatherForecast currentTab={this.state.currentTab}
-                  changeTab={this.changeTab}/>
+         <Projects />
+         <LoveCalc />
         </div>
       </div>
     );

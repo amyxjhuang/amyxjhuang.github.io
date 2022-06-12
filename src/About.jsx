@@ -6,13 +6,10 @@ class About extends React.Component {
   }
 
   render() {
-    if (this.props.currentTab === "home") {
-      console.log("render");
       return (
         <div>
         <h1 className="container">about me</h1>
-            <div><i>software developer based in the </i><img height="20px" src="https://static.thenounproject.com/png/1832-200.png" /> <i>san francisco bay area</i></div>
-            <img id="faceimg" width="50%" src="https://amyxjhuang.github.io/facepic.JPG"/>
+            {/* <div><i>software developer based in the </i><img height="20px" src="https://static.thenounproject.com/png/1832-200.png" /> <i>san francisco bay area</i></div> */}
 
           <div className="container">
 
@@ -29,12 +26,10 @@ class About extends React.Component {
 
               <p>You can reach out to me by email at amyxjhuang@berkeley.edu, and check out my <a href="https://tinyurl.com/amyhuangresume"> resume</a> here.</p>
           </div>
+          <img id="faceimg" src={require("./images/me.png")}/>
+
         </div>
       );
-    }
-    else {
-      return(<div></div>);
-    }
   }
 }
 

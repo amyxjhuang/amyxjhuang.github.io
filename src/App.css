@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Tiro+Telugu&display=swap');
+
 .App {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
-
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Tiro Telugu', serif;
+  /* font-family: 'Rubik', sans-serif; */
 }
 
 img{
@@ -39,7 +42,8 @@ p{
 }
 
 #faceimg {
-  margin: 20px 10px 10px 10px
+  margin: 20px 10px 10px 10px;
+  height: 50vh;
 }
 
 .icon {

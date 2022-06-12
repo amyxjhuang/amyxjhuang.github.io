@@ -11,19 +11,11 @@ class Projects extends React.Component {
   }
 
   render() {
-    if (this.props.currentTab === "projects") {
-      console.log("render");
       return (
         <div>
         <h1 className="container">projects</h1>
           <div className="container">
-
-
-                 <p> I really like working on web projects (as you can probably tell) and I've learned a lot from this during my time in college. </p>
-                 <p>These are some programming projects that I've worked on this year. Check out the
-                    github <a href="https://github.com/amyxjhuang"> here</a>. If you want to see past versions of this
-                    website, here's mine from <a href="https://amyxjhuang.github.io">1 year ago</a> and my first
-                    website from <a href="amyxjhuang.appspot.com">2 years ago</a>!</p>
+                 <p> Here are a few of the coding projects I've worked on over the years :)</p>
 
               </div>
               <Project title="Face Detection & Morphing"
@@ -47,13 +39,13 @@ class Projects extends React.Component {
                        imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Rgb-compose-Alim_Khan.jpg/2560px-Rgb-compose-Alim_Khan.jpg"
                        link="https://inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/proj1/cs194-26-adv/cv_proj1/"
                        bulletList={["Use SKImage.io library to process image", "Align color channels using recursive image pyramid speedup and SSD"]} />
-             <a onClick={() => this.props.changeTab("weather")}>
+             <a href="/weather">
              <Project title="ReactJS Weather Forecast"
                       video={false}
-                      urlDesc="Click here to see the Github repo."
+                      urlDesc="Click here to chehck the weather for this week!"
                       desc="A dynamic web application that displays the weekly weather forcast for any searched city in the United States."
-                      imgsrc="https://amyxjhuang.github.io/weather.png"
-                      link="https://github.com/amyxjhuang/weather"
+                      imgsrc="https://i.imgur.com/fLWiP7S.png"
+                      link="https://amyxjhuang.github.io/weather"
                       bulletList={["Use ReactJS and Bootstrap library to render", "OpenWeather API to fetch weather data and images"]} />
                 </a>
             <Project title="Burma! Burma! Website Redesign"
@@ -63,16 +55,7 @@ class Projects extends React.Component {
                     imgsrc="https://i.imgur.com/0RmwiMM.png"
                     link="https://www.burmaburma.com"
                     bulletList={["We used Figma and Squarespace to redesign!", "Increased website visits by 181% and page views by 313%", "Unique visitors increased by 212%, as documented on Squarespace analytics"]} />
-          
-
-            <Project title="Bay Area Maps"
-                       urlDesc=""
-                      video={false}
-                       desc="A Google Maps-like application with zoom and navigation functionality."
-                       imgsrc="https://amyxjhuang.github.io/bearmaps.png"
-                       link=""
-                       bulletList={["Java data structures & algorithms for backend", "Image rasterization to search and stitch together image files","Used A* shortest-path algorithm for navigation and trie data structure for autocomplete search"]} />
-           <Project title="Codeology Website Redesign"
+          <Project title="Codeology Website Redesign"
                     video={false}
                     urlDesc="Click here to view the website"
                     desc="Designed this website for my student organization using Figma and React"
@@ -98,10 +81,6 @@ class Projects extends React.Component {
 
         </div>
       );
-    }
-    else {
-      return(<div></div>);
-    }
   }
 }
 //https://amyxjhuang.github.io/weather.png
