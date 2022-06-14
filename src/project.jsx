@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import { Player } from 'video-react';
+// import { Player } from 'video-react';
 
 
 class Project extends React.Component {
@@ -10,7 +10,7 @@ class Project extends React.Component {
 
   render() {
     var bulletList = this.props.bulletList.map((b) =>
-      <li>{b}</li>
+      <li key={b}>{b}</li>
     );
     var imgVid =  <img className="proj-img" src={this.props.imgsrc}/>
 
@@ -21,9 +21,9 @@ class Project extends React.Component {
        <div className="proj-desc">
 
             <a href={this.props.link}> {imgVid}</a></div>
-        <div className="proj-desc">
+        <div className="proj-desc"> 
         <div>
-          <h2>{this.props.title}</h2>
+          <h4>{this.props.title}</h4>
           <p>{this.props.desc}</p>
           <a href={this.props.link}> {this.props.urlDesc} </a>
 

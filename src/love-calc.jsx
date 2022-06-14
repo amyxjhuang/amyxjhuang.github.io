@@ -67,7 +67,7 @@ class LoveCalc extends React.Component {
     var good = 70;
     var medium = 40;
     var bad = 10;
-    var DATA = {"INFP": {"INFP": good, "ENFP": good, "INTJ": good, "ENFJ": great, "INTJ": good, "ENTJ": great, "INTP": good, "ENTP": good, "ISFP":bad, "ESFP": bad, "ISTP": bad, "ESTP": bad, "ISFJ": bad, "ESFJ": bad, "ISTJ": bad, "ESTJ": bad},
+    var DATA = {"INFP": {"INFP": good, "ENFP": good, "INFJ": good, "ENFJ": great, "INTJ": good, "ENTJ": great, "INTP": good, "ENTP": good, "ISFP":bad, "ESFP": bad, "ISTP": bad, "ESTP": bad, "ISFJ": bad, "ESFJ": bad, "ISTJ": bad, "ESTJ": bad},
                 "ENFP": {"INFP": good, "ENFP": good, "INFJ": great, "ENFJ": good, "INTJ": great, "ENTJ": good, "INTP": good, "ENTP": good, "ISFP": bad, "ESFP": bad, "ISTP": bad, "ESTP": bad, "ISFJ": bad, "ESFJ": bad, "ISTJ": bad, "ESTJ": bad},
                 "INFJ": {"INFP": good, "ENFP": great, "INFJ": good, "ENFJ": good, "INTJ": good, "ENTJ": good, "INTP": good, "ENTP": great, "ISFP": bad, "ESFP": bad, "ISTP": bad, "ESTP": bad, "ISFJ": bad, "ESFJ": bad, "ISTJ": bad, "ESTJ": bad},
                 "ENFJ": {"INFP": great, "ENFP": good, "INFJ": good, "ENFJ": good, "INTJ": good, "ENTJ": good, "INTP": good, "ENTP": good, "ISFP": great, "ESFP": bad, "ISTP": bad, "ESTP": bad, "ISFJ": bad, "ESFJ": bad, "ISTJ": bad, "ESTJ": bad},
@@ -99,13 +99,6 @@ class LoveCalc extends React.Component {
       this.setState({score: 0,
                      result: "That would be considered pedophilia please don't."});
     }
-    else if ((A.name === "Amy Huang" && B.name==="Anderson Lam") || (B.name === "Amy Huang" && A.name==="Anderson Lam")) {
-      this.setState({score:10000000, result:"Wow. Amy and Anderson should get married! I've never seen such a high score."})
-    }
-    else if (A.name ==="Anderson Lam" && B.name !== "Amy Huang") {
-      this.setState({score:0, result:"Dang, I guess Anderson should keep dating Amy 4ever?"})
-    }
-
     else if(A.name === "Darren Lin" || B.name === "Darren Lin") {
       this.setState({score:-100, result:"Is this a mistake? Darren would obviously never find love lol. Try again."})
     }
@@ -143,14 +136,24 @@ class LoveCalc extends React.Component {
       return(
 
         <div className="container">
-        <h1> Love Calculator </h1>
-        <p> I don't have much to do so here is a little fun project I did during quarantine</p>
-        <LoveForm submit={this.loadFormInfo} person="Person #1"/>
-        <LoveForm submit={this.loadFormInfo} person="Person #2"/>
-        <button onClick={this.calculate}>calculate score!</button>
-        <h2>Score: {this.state.score}</h2>
-        <p>{this.state.subresult}</p>
-        <h3>{this.state.result}</h3>
+        <h3> love calculator </h3>
+                
+<p style={{paddingLeft: "10vw"}}> find out if u shud date ur lover...</p>
+        <center>
+        <div className="row">
+          <img src={require("./images/straw2.png")} height="100px"/>
+
+          <LoveForm submit={this.loadFormInfo} person="Person #1"/>
+          <LoveForm submit={this.loadFormInfo} person="Person #2"/>
+          <img src={require("./images/straw1.png")} height="100px"/>
+
+        </div>
+        </center>
+
+        <button style={{marginLeft: "60vw"}}  onClick={this.calculate}>calculate score!</button>
+        <h3>score: {this.state.score}</h3>
+        <p style={{paddingLeft: "10vw"}}>{this.state.subresult}</p>
+        <h3 style={{paddingLeft: "10vw"}}>{this.state.result}</h3>
         </div>
 
       );

@@ -7,27 +7,22 @@ class About extends React.Component {
 
   render() {
       return (
-        <div>
-        <h1 className="container">about me</h1>
-            {/* <div><i>software developer based in the </i><img height="20px" src="https://static.thenounproject.com/png/1832-200.png" /> <i>san francisco bay area</i></div> */}
+        <div className="container">
+        <h3>
+          {/* <img src={require("./images/flower.png")} height="50px"/> */}
+        about me</h3>
+          <div className="row">
 
           <div className="container">
+          <div style={{color:"#685344"}}><i >software developer based in </i><img height="20px" src="https://static.thenounproject.com/png/1832-200.png" /> <i>manhattan nyc</i></div>
 
-              <p>Hello :) ! My name is Amy Huang, and I am a 3rd-year student at <a href="https://berkeley.edu">The University of California,
-              Berkeley</a> majoring in Computer Science. I'll be interning at Facebook for summer 2021 and Snap Inc for fall 2021!</p>
-
-              <p>I grew up in southern California and have a background in visual arts. Currently I am working on
-              a pro-bono project as a software developer for Seawarden.io at <a href="https://codeology.club"> Codeology</a>. This
-              semester I am also a Project Manager for Outhrive's web design project for Burma! Burma!, a local Burmese restaurant. We just finished their 
-              main location <a href="https://www.burmaburma.com">here!</a> We increased the web traffic by 212% and are working on their other 2 locations now!
-
-              This past summer I worked on iOS development at <a href="https://snap.com">Snap Inc</a> in the Client
-              Platform & Frameworks team.</p>
-
-              <p>You can reach out to me by email at amyxjhuang@berkeley.edu, and check out my <a href="https://tinyurl.com/amyhuangresume"> resume</a> here.</p>
+              <p><br/>hello! :)  my name is Amy Huang, & i love all things arts n crafts n coding. i'm a recent grad at uc berkeley with a bachelor's in computer science! 
+                this year i will also be starting work at pinterest as a fullstack software developer based in nyc.  </p>
+              <p>you can reach out to me by email at amyxjhuang@berkeley.edu, and check out my <a href="https://tinyurl.com/amyhuangresume"> resume here</a></p>
+              <p>this website was created w/ reactjs, design & icons created w/ figma</p>
           </div>
-          <img id="faceimg" src={require("./images/me.png")}/>
-
+          <img id="faceimg" src={require("./images/mes.png")}/>
+          </div>
         </div>
       );
   }
