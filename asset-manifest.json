@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b766570d.chunk.css",
+    "main.js": "/static/js/main.ec8f7865.chunk.js",
+    "main.js.map": "/static/js/main.ec8f7865.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.94a6af97.js",
+    "runtime-main.js.map": "/static/js/runtime-main.94a6af97.js.map",
+    "static/js/2.898682b8.chunk.js": "/static/js/2.898682b8.chunk.js",
+    "static/js/2.898682b8.chunk.js.map": "/static/js/2.898682b8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1b45970237e7d62639e8f0182a16a946.js": "/precache-manifest.1b45970237e7d62639e8f0182a16a946.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b766570d.chunk.css.map": "/static/css/main.b766570d.chunk.css.map",
+    "static/js/2.898682b8.chunk.js.LICENSE.txt": "/static/js/2.898682b8.chunk.js.LICENSE.txt",
+    "static/media/mes.png": "/static/media/mes.0ffb7698.png",
+    "static/media/straw1.png": "/static/media/straw1.4baa5cee.png",
+    "static/media/straw2.png": "/static/media/straw2.45c90b8d.png",
+    "static/media/wheres-food.png": "/static/media/wheres-food.36c1e3a5.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94a6af97.js",
+    "static/js/2.898682b8.chunk.js",
+    "static/css/main.b766570d.chunk.css",
+    "static/js/main.ec8f7865.chunk.js"
+  ]
+}
