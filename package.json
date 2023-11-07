@@ -849,7 +849,7 @@
     "schema-utils": "^2.6.6",
     "select-hose": "^2.0.0",
     "selfsigned": "^1.10.7",
-    "semver": "^6.3.0",
+    "semver": "^6.3.1",
     "send": "^0.17.1",
     "serialize-javascript": "^2.1.2",
     "serve-index": "^1.9.1",
