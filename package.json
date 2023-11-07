@@ -674,7 +674,7 @@
     "pkg-dir": "^3.0.0",
     "pnp-webpack-plugin": "^1.6.4",
     "portfinder": "^1.0.26",
-    "postcss": "^7.0.30",
+    "postcss": "^8.4.31",
     "posix-character-classes": "^0.1.1",
     "postcss-attribute-case-insensitive": "^4.0.2",
     "postcss-browser-comments": "^3.0.0",
