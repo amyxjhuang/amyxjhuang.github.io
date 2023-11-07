@@ -209,7 +209,7 @@
     "damerau-levenshtein": "^1.0.6",
     "dashdash": "^1.14.1",
     "data-urls": "^1.1.0",
-    "debug": "^4.1.1",
+    "debug": "^4.3.1",
     "decamelize": "^1.2.0",
     "decode-uri-component": "^0.2.0",
     "deep-equal": "^1.1.1",
