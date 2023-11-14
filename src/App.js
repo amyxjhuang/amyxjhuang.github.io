@@ -19,6 +19,8 @@ class App extends React.Component {
             </a>
           <div id="nav">
             <a className="nav-item" href="/">home</a>
+            <a className="nav-item" target="_" href="https://www.github.com/amyxjhuang">github</a>
+            <a className="nav-item" target="_" href="https://www.instagram.com/amyspicypaint">art</a>
             <a className="nav-item" href="/sew">sewing</a>
             <a className="nav-item" target="_" href="/weather"><img src={require("./images/cloud.png")} height="30px"/></a>
 
