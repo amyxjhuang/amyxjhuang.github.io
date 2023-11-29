@@ -12,14 +12,17 @@ class Project extends React.Component {
     var imgVid = <img className="proj-img" src={this.props.imgsrc} />;
 
     return (
-      <div className="project-container">
-        <div className="proj-desc">
+        <div className="project-container">
+        <h4>{this.props.title}</h4>
+        <p>{this.props.desc}</p>
+              <div className="proj-columns">
+
+        <div className="proj-col">
           <a target="_blank" href={this.props.link}> {imgVid}</a>
         </div>
-        <div className="proj-desc">
+        <div className="proj-col">
+        
           <div>
-            <h4>{this.props.title}</h4>
-            <p>{this.props.desc}</p>
             <a target="_blank" href={this.props.link}> {this.props.urlDesc} </a>
 
             <div className="proj-bullets">
@@ -27,6 +30,8 @@ class Project extends React.Component {
             </div>
           </div>
         </div>
+                </div>
+
       </div>
     );
   }

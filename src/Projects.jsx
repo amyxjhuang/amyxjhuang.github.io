@@ -16,44 +16,66 @@ class Projects extends React.Component {
           <h3>projects</h3>
         </div>
         <Project
-          title="face detection & morphing"
+          title="Pill Watch: Medical Image Recognition System"
           video={false}
           urlDesc="click here to see my process writeup!"
-          desc="detecting face keypoints using a neural net, and morphing two faces together with Delauney triangulation and weighted cross-dissolving"
-          imgsrc="https://media0.giphy.com/media/K4kA5ajpYUXY2glBsU/giphy.gif"
-          link="https://inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/proj3/cs194-26-adv/"
-          bulletList={[
-            "trained neural net using PyTorch to detect facial keypoints",
-            "used delauney triangulation to warp images into an average face",
-            "computed 'mean face' of the danes dataset by averaging all faces in the population",
-          ]}
-        />
-        <Project
-          title="pill watch: capsule identifier and medication tracker"
-          video={false}
-          urlDesc="github repo"
-          desc="fullstack application for users to track their medications and identify pills"
+          desc="Developed a medical image recognition system using Python, PostgreSQL, and Flask. Integrated Roboflow prediction models to accurately identify pill capsule images. Implemented secure user authentication with hashed passwords for Flask-based sign-in and login. Designed and optimized user and pill profiles within a PostgreSQL database. Successfully deployed the application on an Azure server for real-world usage."
           imgsrc="https://i.imgur.com/CGzlQ9m.png"
           link="https://github.com/theoshiao/pillwatch"
           bulletList={[
-            "integrate roboflow prediction model to identify capsule images",
-            "postgresql database for user and drug profiles",
-            "implement user authetication and 3rd party login options",
-          ]}
-        />
-        <Project
-          title="colorizing the prokudin-gorskii photo collection"
-          video={false}
-          urlDesc="click here to see my process writeup!"
-          desc="image processing the digitized prokudin-gorskii glass pane photos into colored images using python"
-          imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Rgb-compose-Alim_Khan.jpg/2560px-Rgb-compose-Alim_Khan.jpg"
-          link="https://inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/proj1/cs194-26-adv/cv_proj1/"
-          bulletList={[
-            "use SKImage.io library to process image",
-            "align color channels using recursive image pyramid speedup and SSD",
+            "Integrated Roboflow prediction models for accurate pill capsule image identification.",
+            "Implemented secure Flask-based user authentication with hashed passwords.",
+            "Designed and optimized user and pill profiles in a PostgreSQL database.",
+            "Deployed the application on an Azure server for real-world usage.",
           ]}
         />
 
+        <Project
+          title="Face Detection & Morphing: Advanced Image Processing with Neural Networks"
+          video={false}
+          urlDesc="click here to see my process writeup!"
+          desc="Applied advanced image processing techniques for facial keypoint detection using PyTorch. Utilized Delaunay triangulation and weighted cross-dissolving to morph faces together. Trained a neural network on the IMM dataset to detect facial keypoints with a focus on nose points. Implemented data augmentation strategies for model enhancement, including color map changes and image shifting. Contributed to creating caricatures by extrapolating from a 'mean face' and optimizing alpha values."
+          imgsrc="https://media0.giphy.com/media/K4kA5ajpYUXY2glBsU/giphy.gif"
+          link="https://inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/proj3/cs194-26-adv/"
+          bulletList={[
+            "Applied advanced image processing techniques for facial keypoint detection using PyTorch.",
+            "Utilized Delaunay triangulation and weighted cross-dissolving for face morphing.",
+            "Trained a neural network on the IMM dataset for facial keypoint detection.",
+            "Implemented data augmentation strategies for model enhancement.",
+            "Contributed to creating caricatures by extrapolating from a 'mean face' and optimizing alpha values.",
+          ]}
+        />
+
+        <Project
+          title="Panorama Photo Autostitch: Image Stitching and Processing"
+          video={false}
+          urlDesc="click here to see my process writeup!"
+          desc="Engineered an image stitching system using homographies for panorama creation. Implemented key computer vision concepts such as registering, projective warping, and resampling. Applied 'Multi-Image Matching using Multi-Scale Oriented Patches' techniques for feature extraction. Iteratively processed a series of images, applying forward warping for seamless panoramic compositions. Contributed to rectifying perspective images with rectangular objects into a front-view."
+          imgsrc="https://inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/proj5B/cs194-26-adv/sitblended.jpg"
+          link="https://inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/proj5B/cs194-26-adv/"
+          bulletList={[
+            "Engineered an image stitching system using homographies for panorama creation.",
+            "Implemented key computer vision concepts such as registering, projective warping, and resampling.",
+            "Applied 'Multi-Image Matching using Multi-Scale Oriented Patches' techniques for feature extraction.",
+            "Iteratively processed a series of images, applying forward warping for seamless panoramic compositions.",
+            "Contributed to rectifying perspective images with rectangular objects into a front-view.",
+          ]}
+        />
+
+        <Project
+          title="Colorizing the Prokudin-Gorskii Photo Collection: Image Processing and Analysis"
+          video={false}
+          urlDesc="click here to see my process writeup!"
+          desc="Led a project focusing on image processing and analysis using the Scikit-image library. Aligned and re-colorized Prokudin-Gorskii glass pane photos, demonstrating proficiency in image manipulation. Implemented efficient displacement calculations for each color channel using sum of squared differences. Utilized the pyramid image speedup technique for processing large images in a Jupyter Notebook environment."
+          imgsrc="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Rgb-compose-Alim_Khan.jpg/2560px-Rgb-compose-Alim_Khan.jpg"
+          link="https://inst.eecs.berkeley.edu/~cs194-26/fa20/upload/files/proj1/cs194-26-adv/cv_proj1/"
+          bulletList={[
+            "Led a project focusing on image processing and analysis using the Scikit-image library.",
+            "Aligned and re-colorized Prokudin-Gorskii glass pane photos, demonstrating proficiency in image manipulation.",
+            "Implemented efficient displacement calculations for each color channel using sum of squared differences.",
+            "Utilized the pyramid image speedup technique for processing large images in a Jupyter Notebook environment.",
+          ]}
+        />
         <Project
           title="constellation study rewards extension"
           video={false}
